@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/cookie.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/main.css">
+        <title>Cookie clicker!</title>
+        <script src="https://kit.fontawesome.com/42d7d45ee1.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="container-x2">
+                <div class="game-wrapper">
+                    <div class="timer main-color">
+                        <p><span id="seconds">5</span> seconds left!</p>
+                    </div>
+                    <div class="main-color game">
+                        <p id="score">0</p>
+                        <img data-clickable="false" src="images/cookie.png" id="cookie" alt="cookie">
+                    </div>
+                    <button id="startButton" type="button" class="start main-color">START</button>
+                </div>
+                <div class="hs-wrapper">
+                    <div class="hs main-color">
+                        <h5 class="hs-title">TOP 3</h5>
+                        <ul id="scoreTable">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+
+
+        <template id="scoreTemplate">
+            <li>
+                <span class="hs-name"></span><br>
+                <i class="fas fa-chevron-circle-right"></i>
+                <span class="hs-score"></span>
+            </li>
+        </template>
+    </body>
+
+</html>
